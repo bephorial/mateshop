@@ -3,9 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script.js" defer></script>
+    <title>Mates</title>
 </head>
-<body>
-    
+<body class="body">
+    <nav class="navbar">
+        <div class="logo"></div>
+        <div class="icon search-icon">&#x1F50D;</div> <!-- search icon -->
+        <div class="icon menu-icon">&#9776;</div> <!-- burger -->
+    </nav>
+
+    <!-- Main image -->
+    <section class="banner">
+        <img src="img/enzobanner.jpg" alt="Main image" class="banner-image">
+    </section>
+
+    <!-- Text Container -->
+    <section class="text-container">
+        <h1 class="main-text">Tomo mate. Luego existo.</h1>
+        <p class="sub-text">En Mate Shop tenemos los mejores productos para tu mate, y al mejor precio del mercado.</p>
+    </section>
+
+     <!-- Buttons -->
+     <section class="button-container">
+        <button class="action-button">Buscar Productos</button>
+        <button class="action-button">Filtrar Productos</button>
+    </section>
+
+    <!-- Carousel 1 -->
+    <section class="product-carousel">
+        <h2 class="carousel-title">Destacados</h2>
+        <button class="carousel-arrow left-arrow" onclick="scrollCarousel(this, -1)">&#x25C0;</button>
+        <div class="carousel">
+            <div class="product-card">
+                <img src="img/producto1.jpg" alt="Producto 1">
+                <p>Calabaza</p>
+                <p>$4,800</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto2.jpg" alt="Producto 2">
+                <p>Acero</p>
+                <p>$3,100</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+        </div>
+        <button class="carousel-arrow right-arrow" onclick="scrollCarousel(this)">&#x25B6;</button>
+    </section>
+
+     <!-- Carousel 2 -->
+     <section class="product-carousel">
+        <h2 class="carousel-title">Destacados</h2>
+        <button class="carousel-arrow left-arrow" onclick="scrollCarousel(this, -1)">&#x25C0;</button>
+        <div class="carousel">
+            <div class="product-card"> 
+                <img src="img/producto1.jpg" alt="Producto 1">
+                <p>Calabaza</p>
+                <p>$4,800</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto2.jpg" alt="Producto 2">
+                <p>Acero</p>
+                <p>$3,100</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+        </div>
+        <button class="carousel-arrow right-arrow" onclick="scrollCarousel(this)">&#x25B6;</button>
+    </section>
+
+     <!-- Carousel 3 -->
+     <section class="product-carousel">
+        <h2 class="carousel-title">Destacados</h2>
+        <button class="carousel-arrow left-arrow" onclick="scrollCarousel(this, -1)">&#x25C0;</button>
+        <div class="carousel">
+            <div class="product-card"> 
+                <img src="img/producto1.jpg" alt="Producto 1">
+                <p>Calabaza</p>
+                <p>$4,800</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto2.jpg" alt="Producto 2">
+                <p>Acero</p>
+                <p>$3,100</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            <div class="product-card">
+                <img src="img/producto3.jpg" alt="Producto 3">
+                <p>Madera</p>
+                <p>$2,500</p>
+            </div>
+            
+        </div>
+        <button class="carousel-arrow right-arrow" onclick="scrollCarousel(this)">&#x25B6;</button>
+    </section>
 </body>
 </html>
