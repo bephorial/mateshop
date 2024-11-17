@@ -1,28 +1,16 @@
-function scrollCarousel(button, direction = 1) {
-    const carousel = button.parentElement.querySelector('.carousel');
-    const scrollAmount = carousel.offsetWidth / 2;
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
 
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
 
-    carousel.scrollBy({
-        left: direction * scrollAmount,
-        behavior: 'smooth'
-    });
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
 
-
-    setTimeout(() => toggleArrows(carousel), 300);
-}
-
-function toggleArrows(carousel) {
-    const leftArrow = carousel.parentElement.querySelector('.left-arrow');
-    const rightArrow = carousel.parentElement.querySelector('.right-arrow');
-
-
-    leftArrow.style.display = carousel.scrollLeft > 0 ? 'block' : 'none';
-
- 
-    rightArrow.style.display = carousel.scrollLeft + carousel.offsetWidth < carousel.scrollWidth ? 'block' : 'none';
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.carousel').forEach(carousel => toggleArrows(carousel));
-});
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
